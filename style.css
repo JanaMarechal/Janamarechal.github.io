@@ -24,13 +24,13 @@ h1 {
     font-size: 2rem;
     align-self: center;
     color: #333; 
-    margin-bottom: 10px; 
 }
 
 h2, h3 {
     font-size: 1rem;
+    line-height: 120%;
     color: #333; 
-    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 p,label {
@@ -161,7 +161,7 @@ a:hover {
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #cad2c5;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
@@ -171,3 +171,30 @@ a:hover {
     color: black;
     text-align: left;
   }
+
+/* Bedankt */
+#bedankt {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px; /* Voeg ruimte toe boven het bedankbericht */
+}
+
+/* Maak het bedankt bericht zichtbaar */
+#bedankt.visible {
+  display: block;
+}
+
+/* button style */
+#submitbutton {
+  background-color: #52489c;
+  border: none;
+  color: #cad2c5;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
