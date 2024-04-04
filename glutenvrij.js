@@ -1,4 +1,3 @@
-// Function to update menu items based on the glutenvrij checkbox state
 function updateMenu_gluten() {
     var glutenvrijCheckbox = document.getElementById('glutenvrij');
     var extraItems = document.querySelectorAll('.extra span.gluten');
@@ -6,26 +5,26 @@ function updateMenu_gluten() {
     var hoofdgerechtItems = document.querySelectorAll('.hoofdgerecht span.gluten');
     var nagerechtItems = document.querySelectorAll('.nagerecht span.gluten');
 
-    // Check if the glutenvrij checkbox is checked
+    // Als de checkbox is aangevinkt ...
     if (glutenvrijCheckbox.checked) {
-
-
+        // Update hoofdgerecht items
         voorgerechtItems[0].innerHTML = "glutenvrije pistolet";
+
         // Update hoofdgerecht items
         hoofdgerechtItems[0].innerHTML = "rijst";
 
         // Update nagerecht items
         nagerechtItems[0].innerHTML = "vanille ijs met chocolade saus";
 
+        // Update de extra items
         extraItems[0].innerHTML ="glutenvrije pistolet"
+
     } else {
-
-
+        // ... als de checkbox niet is aangevinkt
         voorgerechtItems[0].innerHTML = "stokbrood";
-        // Revert back to original text in hoofdgerecht items
+        
         hoofdgerechtItems[0].innerHTML = "couscous";
 
-        // Revert back to original text in nagerecht items
         nagerechtItems[0].innerHTML = "tiramisu";
 
         extraItems[0].innerHTML ="brood"
@@ -33,5 +32,5 @@ function updateMenu_gluten() {
 
 }
 
-// Add event listener to the glutenvrij checkbox to call updateMenu_glutenfunction when clicked
+// als de checkbox wordt geactiveerd wordt het geupdate
 document.getElementById('glutenvrij').addEventListener('click', updateMenu_gluten);

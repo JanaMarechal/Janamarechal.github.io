@@ -1,3 +1,4 @@
+<!-- HTML is de structuur of de skelet van de website pagina -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +11,27 @@
 <body>
 
     <h1 class="restaurant">Restaurant All Inclusive</h1>
-
-
-
-
+<!-- Checkbox  -->
     <div id="checkboxes">
+        <!-- h2 tekst -->
         <h2>Als je een allergie hebt<br> vink deze dan aan</h2>
+        <!-- tekst naast de checkbox  -->
         <label class="container">
+        <!-- tekst notenvrij  -->
         <p>Notenvrij</p>
+        <!-- dit is de inputveld van de checkbox, met de tag notenvrij -->
             <input type="checkbox" id="notenvrij">
+            <!-- span is de style van de vinkjes -->
             <span class="checkmark"></span>
           </label>
 
+          <!-- de container is de styling van de checkbox, dit is zelf gemaakt omdat de standaard checkbox niet mooi was: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp -->
           <label class="container">
             <p>Glutenvrij</p>
             <input type="checkbox" id="glutenvrij">
             <span class="checkmark"></span>
           </label>
+
           <label class="container">
             <p>Lactosevrij</p>
             <input type="checkbox" id="lactosevrij">
@@ -42,7 +47,7 @@
 
     <div class="hoofdgerecht">
         <h2>Hoofdgerecht:</h2>
-        <p>Gevulde ravioli met ricotta, spinazie en <span class="lactose">vanille ijs in salieboter</span> (€18,50)</p>
+        <p>Gevulde ravioli met ricotta en spinazie in <span class="lactose">salieboter</span> (€18,50)</p>  
         <p>Gegrilde lamskoteletten met een rozemarijnjus en <span class="gluten">couscous</span> (€22,50)</p>
         <p>Gebakken kabeljauw met <span class="noten">citroen-botersaus</span> (€20,50)</p>
     </div>
@@ -60,9 +65,7 @@
         <p>Karaf wijn (€22,50)</p> 
     </div>
     
-    <!-- Custom checkbox -->
-
-
+    <!-- hier verwijs ik naar de JavaScript code -->
     <script src="notenvrij.js"></script>
     <script src="glutenvrij.js"></script>
     <script src="lactosevrij.js"></script>
