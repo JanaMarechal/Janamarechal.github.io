@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     }
-    x
+    
     div{
         align-self: center;
         text-align: center;
@@ -35,7 +35,6 @@ h2, h3 {
 
 p,label {
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
     font-weight: normal; 
     font-style: normal;
     color: #666;
@@ -84,10 +83,7 @@ a:hover {
     position:fixed;
     bottom: 25px;
     left: 25px;
-}
-
-#checkboxes h2 {
-  text-align: left;
+    text-align: left;
 }
 
 /* checkbox styling */
